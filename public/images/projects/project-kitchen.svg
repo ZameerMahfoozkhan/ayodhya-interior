@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F5F0" />
+      <stop offset="100%" stop-color="#ECE8DF" />
+    </linearGradient>
+    <linearGradient id="walnutGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9B795B" />
+      <stop offset="100%" stop-color="#806246" />
+    </linearGradient>
+    <linearGradient id="sageGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7B937D" />
+      <stop offset="100%" stop-color="#556957" />
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#E8ECE9" stop-opacity="0.4" />
+    </linearGradient>
+    <linearGradient id="marbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F4F3EF" />
+      <stop offset="100%" stop-color="#EAE7DF" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#DFDCD4" stroke-width="0.8" stroke-opacity="0.5"/>
+    </pattern>
+    <pattern id="flutes" width="16" height="40" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="10" height="40" fill="#9B795B" fill-opacity="0.9"/>
+      <rect x="10" y="0" width="6" height="40" fill="#806246" fill-opacity="0.95"/>
+    </pattern>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#272A27" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" />
+  <rect width="800" height="500" fill="url(#grid)" />
+
+  <!-- Architectural Graphic Artboard -->
+  <g id="illustration">
+    
+  <rect x="80" y="50" width="640" height="340" rx="16" fill="#FFFFFF" stroke="#DFDCD4" stroke-width="1.5" filter="url(#shadow)"/>
+  <!-- Upper Cabinets -->
+  <rect x="110" y="70" width="580" height="90" rx="6" fill="#ECE8DF" stroke="#DFDCD4" stroke-width="1.5"/>
+  <line x1="250" y1="70" x2="250" y2="160" stroke="#DFDCD4" stroke-width="1.5"/>
+  <line x1="400" y1="70" x2="400" y2="160" stroke="#DFDCD4" stroke-width="1.5"/>
+  <line x1="550" y1="70" x2="550" y2="160" stroke="#DFDCD4" stroke-width="1.5"/>
+  <!-- Chimney Hood -->
+  <polygon points="360,90 440,90 460,160 340,160" fill="#272A27"/>
+  <rect x="380" y="70" width="40" height="20" fill="#272A27"/>
+  <!-- Countertop Backsplash -->
+  <rect x="110" y="160" width="580" height="70" fill="url(#marbleGrad)"/>
+  <line x1="110" y1="230" x2="690" y2="230" stroke="#272A27" stroke-width="6"/>
+  <!-- Lower Modular Drawers -->
+  <rect x="110" y="236" width="580" height="140" fill="url(#sageGrad)" rx="6"/>
+  <line x1="110" y1="280" x2="690" y2="280" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="110" y1="330" x2="690" y2="330" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="300" y1="236" x2="300" y2="376" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="500" y1="236" x2="500" y2="376" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Handles -->
+  <rect x="180" y="254" width="50" height="4" rx="2" fill="#FFFFFF"/>
+  <rect x="180" y="302" width="50" height="4" rx="2" fill="#FFFFFF"/>
+  <rect x="180" y="350" width="50" height="4" rx="2" fill="#FFFFFF"/>
+  <rect x="375" y="254" width="50" height="4" rx="2" fill="#FFFFFF"/>
+  <rect x="375" y="302" width="50" height="4" rx="2" fill="#FFFFFF"/>
+  <rect x="375" y="350" width="50" height="4" rx="2" fill="#FFFFFF"/>
+  
+  </g>
+
+  <!-- Lower Title Banner Pill -->
+  <g transform="translate(40, 410)" filter="url(#shadow)">
+    <rect width="720" height="60" rx="12" fill="#FFFFFF" stroke="#DFDCD4" stroke-width="1.5" />
+    <circle cx="36" cy="30" r="14" fill="#9B795B" />
+    <path d="M 32 30 L 40 30 M 36 26 L 40 30 L 36 34" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="64" y="27" font-family="'Manrope', sans-serif" font-size="15" font-weight="700" fill="#272A27">Modular Kitchen Engineering</text>
+    <text x="64" y="45" font-family="'Inter', sans-serif" font-size="12" fill="#6F726C">BWP Marine Ply, Tandem Drawers &amp; Countertop Planning • Ayodhya</text>
+  </g>
+</svg>

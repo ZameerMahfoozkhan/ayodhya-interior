@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#272A27"/>
+  <rect x="6" y="6" width="52" height="52" rx="10" fill="#F7F5F0" stroke="#DFDCD4" stroke-width="1.5"/>
+  <!-- Stylized Geometric A for Ayodhya Architecture -->
+  <path d="M 32 14 L 46 48 L 38 48 L 32 32 L 26 48 L 18 48 Z" fill="#667A68"/>
+  <line x1="24" y1="38" x2="40" y2="38" stroke="#9B795B" stroke-width="3" stroke-linecap="round"/>
+</svg>

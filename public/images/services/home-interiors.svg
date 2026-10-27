@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7F5F0" />
+      <stop offset="100%" stop-color="#ECE8DF" />
+    </linearGradient>
+    <linearGradient id="walnutGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9B795B" />
+      <stop offset="100%" stop-color="#806246" />
+    </linearGradient>
+    <linearGradient id="sageGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7B937D" />
+      <stop offset="100%" stop-color="#556957" />
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#E8ECE9" stop-opacity="0.4" />
+    </linearGradient>
+    <linearGradient id="marbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#F4F3EF" />
+      <stop offset="100%" stop-color="#EAE7DF" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#DFDCD4" stroke-width="0.8" stroke-opacity="0.5"/>
+    </pattern>
+    <pattern id="flutes" width="16" height="40" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="10" height="40" fill="#9B795B" fill-opacity="0.9"/>
+      <rect x="10" y="0" width="6" height="40" fill="#806246" fill-opacity="0.95"/>
+    </pattern>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#272A27" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" />
+  <rect width="800" height="500" fill="url(#grid)" />
+
+  <!-- Architectural Graphic Artboard -->
+  <g id="illustration">
+    
+  <!-- Room Perspective Frame -->
+  <rect x="80" y="50" width="640" height="340" rx="16" fill="#FFFFFF" stroke="#DFDCD4" stroke-width="1.5" filter="url(#shadow)"/>
+  
+  <!-- Left Wall Fluted Louvers -->
+  <rect x="110" y="70" width="140" height="300" fill="url(#flutes)" rx="4"/>
+  
+  <!-- Center Marble Slab Feature -->
+  <rect x="270" y="70" width="280" height="230" fill="url(#marbleGrad)" rx="8" stroke="#DFDCD4" stroke-width="1.5"/>
+  <path d="M 300 90 Q 360 140 420 120 T 520 220" stroke="#DFDCD4" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 330 240 Q 390 190 480 270" stroke="#9B795B" stroke-width="1.5" fill="none" opacity="0.4"/>
+  
+  <!-- Wall Mounted Modern TV -->
+  <rect x="310" y="100" width="200" height="115" rx="6" fill="#272A27" stroke="#1A1C1A" stroke-width="3"/>
+  <rect x="315" y="105" width="190" height="105" rx="4" fill="#363A36"/>
+  <circle cx="410" cy="155" r="16" fill="#667A68" opacity="0.8"/>
+  <polygon points="406,149 418,155 406,161" fill="#FFFFFF"/>
+
+  <!-- Floating Media Console -->
+  <rect x="260" y="270" width="300" height="40" rx="6" fill="url(#walnutGrad)" filter="url(#shadow)"/>
+  <line x1="360" y1="270" x2="360" y2="310" stroke="#806246" stroke-width="1.5"/>
+  <line x1="460" y1="270" x2="460" y2="310" stroke="#806246" stroke-width="1.5"/>
+
+  <!-- Right Decorative Modular Shelving -->
+  <rect x="570" y="70" width="120" height="300" rx="6" fill="#F7F5F0" stroke="#DFDCD4" stroke-width="1.5"/>
+  <rect x="585" y="100" width="90" height="12" rx="3" fill="#667A68"/>
+  <rect x="585" y="150" width="90" height="12" rx="3" fill="#9B795B"/>
+  <rect x="585" y="200" width="90" height="12" rx="3" fill="#667A68"/>
+  <rect x="585" y="250" width="90" height="12" rx="3" fill="#9B795B"/>
+  
+  </g>
+
+  <!-- Lower Title Banner Pill -->
+  <g transform="translate(40, 410)" filter="url(#shadow)">
+    <rect width="720" height="60" rx="12" fill="#FFFFFF" stroke="#DFDCD4" stroke-width="1.5" />
+    <circle cx="36" cy="30" r="14" fill="#667A68" />
+    <path d="M 32 30 L 40 30 M 36 26 L 40 30 L 36 34" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="64" y="27" font-family="'Manrope', sans-serif" font-size="15" font-weight="700" fill="#272A27">Home Interior Solutions</text>
+    <text x="64" y="45" font-family="'Inter', sans-serif" font-size="12" fill="#6F726C">Living Space, TV Paneling &amp; Ceiling Integration • Ayodhya</text>
+  </g>
+</svg>
