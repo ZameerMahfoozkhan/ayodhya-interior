@@ -1316,25 +1316,49 @@ img, svg {
 }
 
 .hero-wa-pill {
-  display: block;
-  text-align: center;
-  padding: 10px 16px;
-  background-color: var(--whatsapp-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 13px 22px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
   color: #FFFFFF;
   border-radius: var(--radius-full);
   font-family: var(--font-heading);
-  font-size: 0.86rem;
+  font-size: 0.92rem;
   font-weight: 700;
+  letter-spacing: 0.01em;
   text-decoration: none;
-  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.25);
   transition: all var(--duration-fast) var(--ease-spring);
+  box-sizing: border-box;
+}
+
+.hero-wa-pill svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  fill: currentColor;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.hero-wa-pill span {
+  display: inline-block;
+  line-height: 1.2;
 }
 
 .hero-wa-pill:hover {
-  background-color: var(--whatsapp-dark);
+  background: linear-gradient(135deg, #28E16D 0%, #107C70 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.5);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.52), inset 0 1px 1px rgba(255, 255, 255, 0.35);
   color: #FFFFFF;
+}
+
+.hero-wa-pill:active {
+  transform: scale(0.98);
 }
 
 /* --------------------------------------------------------------------------
@@ -2312,9 +2336,10 @@ img, svg {
     padding-bottom: 8px;
   }
 
-  .service-hero-right .hero-wa-pill {
-    padding: 8px 12px;
-    font-size: 0.8rem;
+  .service-hero-right .hero-wa-pill,
+  .hero-glass-badge .hero-wa-pill {
+    padding: 11px 16px;
+    font-size: 0.88rem;
   }
 
   .breadcrumb-nav {
