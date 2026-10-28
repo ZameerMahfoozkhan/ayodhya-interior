@@ -53,7 +53,7 @@ export const siteConfig = {
   // SEO & Social Defaults
   defaultTitle: "Ayodhya Interiors & Exterior Studio | Premium Interior, Exterior, Gates & Railings in Ayodhya",
   defaultMetaDescription: "Professional interior design, modular kitchens, PVC/WPC wall panels, custom gates, glass railings, and exterior cladding in Ayodhya, UP. Call +91 95806 59559.",
-  defaultOgImage: "/images/og-default.jpg",
+  defaultOgImage: "/images/og-default.webp",
   
   // Navigation Menu Architecture
   navMenu: [

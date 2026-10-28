@@ -21,7 +21,7 @@ export function buildGlobalSchema() {
         "url": siteConfig.siteUrl,
         "telephone": siteConfig.phoneRaw,
         "priceRange": "$$",
-        "image": `${siteConfig.siteUrl}/images/og-default.jpg`,
+        "image": `${siteConfig.siteUrl}/images/og-default.webp`,
         "description": siteConfig.supportingLine,
         "address": {
           "@type": "PostalAddress",

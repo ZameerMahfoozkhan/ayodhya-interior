@@ -10,7 +10,7 @@ export const guidesData = [
     readTime: "7 min read",
     category: "Residential Interiors",
     excerpt: "Learn how to choose between BWP plywood vs HDHMR, select the best layout (L-shaped vs parallel) for Indian cooking, and avoid costly kitchen mistakes.",
-    image: "/images/guides/guide-kitchen.jpg",
+    image: "/images/guides/guide-kitchen.webp",
     content: `
       <h3>1. Understanding the Golden Triangle in Indian Kitchens</h3>
       <p>In Indian cooking—characterized by vigorous tadkas, heavy pressure cooking, and frequent washing—the spatial relationship between your sink, refrigerator, and cooking hob dictates daily comfort. The total perimeter distance between these three work centers should ideally measure between 12 and 26 feet, with zero obstructions like tall pantry cabinets blocking movement.</p>
@@ -32,7 +32,7 @@ export const guidesData = [
     readTime: "6 min read",
     category: "Wall Panels",
     excerpt: "A detailed engineering comparison of PVC hollow-cell panels versus high-density Wood-Plastic Composite (WPC) for damp walls, living rooms, and elevations.",
-    image: "/images/guides/guide-panels.jpg",
+    image: "/images/guides/guide-panels.webp",
     content: `
       <h3>1. The Reality of Wall Seelan (Dampness) in Ayodhya</h3>
       <p>Ground-floor homes and older masonry structures across Ayodhya frequently suffer from rising ground dampness, seasonal efflorescence (shora), and peeling paint. Scraping and repainting only masks the issue for a few months. Wall paneling provides a permanent physical barrier between the damp brickwork and your living space.</p>
@@ -55,7 +55,7 @@ export const guidesData = [
     readTime: "8 min read",
     category: "Staircase Railings",
     excerpt: "Comparing safety, structural anchoring, child fall prevention, and maintenance for glass railings vs. stainless steel balustrades in multi-storey homes.",
-    image: "/images/guides/guide-railings.jpg",
+    image: "/images/guides/guide-railings.webp",
     content: `
       <h3>1. Fall-Protection Standards: Why Height and Anchoring Come First</h3>
       <p>By international architectural safety codes, staircase railings must stand at least 34 to 36 inches high from the tread nose, and balcony railings must measure 40 to 42 inches high. Regardless of whether you choose glass or steel, the structural anchoring into the concrete staircase stringer must resist horizontal point loads of at least 1.5 kN/m without deflection.</p>
@@ -77,7 +77,7 @@ export const guidesData = [
     readTime: "6 min read",
     category: "Main Gates",
     excerpt: "How to evaluate your driveway slope, parking clearance, pillar strength, and privacy requirements when designing a custom entrance gate in Ayodhya.",
-    image: "/images/guides/guide-gates.jpg",
+    image: "/images/guides/guide-gates.webp",
     content: `
       <h3>1. Driveway Space: The Primary Deciding Factor</h3>
       <p>Before selecting gate ornamentation, evaluate your physical driveway space. A 12-foot double-leaf swing gate requires at least 6 feet of completely clear inward swinging depth. If parked cars sit close behind the gate, or if the driveway slopes steeply upward into the property, inward swing gates become impractical. In these scenarios, a horizontal sliding gate is the superior engineering choice.</p>

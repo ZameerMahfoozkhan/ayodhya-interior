@@ -35,7 +35,7 @@ export function renderCategoryPage(category) {
     <div class="bezel-card service-card">
       <div class="bezel-card-inner">
         <div class="service-card-media">
-          <img src="${s.heroImage}" alt="${s.h1}" loading="lazy" width="400" height="250" onerror="this.onerror=null; this.src='/images/services/home-interiors.jpg';" />
+          <img src="${s.heroImage}" alt="${s.h1}" loading="lazy" width="400" height="250" onerror="this.onerror=null; this.src='/images/services/home-interiors.webp';" />
           <span class="service-card-badge">${s.heroBadge}</span>
         </div>
         <h3 class="service-card-title">${s.title}</h3>

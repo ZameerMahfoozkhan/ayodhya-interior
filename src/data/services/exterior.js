@@ -17,7 +17,7 @@ export const exteriorServices = [
     metaTitle: "Exterior Wall Cladding in Ayodhya | WPC, HPL & Architectural Facade Cladding",
     metaDescription: "Professional exterior wall cladding in Ayodhya. Certified exterior WPC fluted louvers, high-pressure laminate (HPL) facade panels & ventilated rainscreens.",
     heroBadge: "Architectural Facade Engineering • Ayodhya",
-    heroImage: "/images/services/exterior-cladding.jpg",
+    heroImage: "/images/services/exterior-cladding.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about exterior wall cladding in Ayodhya. Please share available exterior material systems, weather ratings, and price estimates.",
     intro: "The exterior elevation of your home or commercial building endures relentless environmental assault—scorching 45°C summer sun, UV radiation, torrential monsoon downpours, and winter temperature swings. Plain exterior plaster and paint quickly develop hairline shrinkage cracks, peel, and harbor damp algae streaks within just a few years. Exterior architectural cladding creates a rear-ventilated rainscreen envelope that protects structural masonry from direct thermal shock and rain penetration while imparting a world-class luxury facade. In Ayodhya, we install certified exterior-grade WPC composite louvers, High-Pressure Laminates (HPL), and architectural panel systems.",
     types: [
@@ -132,7 +132,7 @@ export const exteriorServices = [
     metaTitle: "ACP Cladding in Ayodhya | Aluminium Composite Panel Commercial Facades",
     metaDescription: "Professional ACP cladding in Ayodhya. Aluminium Composite Panels for commercial facades, showroom storefronts, entrance canopies, signage backdrops & columns.",
     heroBadge: "Commercial Architectural Facades • Ayodhya",
-    heroImage: "/images/services/acp-cladding.jpg",
+    heroImage: "/images/services/acp-cladding.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about ACP cladding in Ayodhya. Please share available panel brands, sheet thicknesses, and quotations.",
     intro: "For commercial buildings, retail showrooms, hospitals, educational institutions, and contemporary corporate offices in Ayodhya, Aluminium Composite Panel (ACP) cladding is the premier material for delivering sleek, high-tech architectural elevations. Lightweight, perfectly flat, and available in an extraordinary array of metallic, solid, and timber finishes, ACP allows rapid transformation of dated concrete facades. We engineer and install precision-routed ACP facade systems, entrance canopies, column wraps, and signage backdrops built on heavy-duty aluminum subframes with weather-sealed silicone joints.",
     types: [
@@ -247,7 +247,7 @@ export const exteriorServices = [
     metaTitle: "Glass Office Partitions in Ayodhya | Frameless & Aluminium Cabin Partitions",
     metaDescription: "Glass office partitions in Ayodhya. 10mm/12mm toughened frameless glass cabins, slim black aluminum profiles, frosted privacy films & swing/sliding glass doors.",
     heroBadge: "Architectural Interior Glazing • Ayodhya",
-    heroImage: "/images/services/glass-partitions.jpg",
+    heroImage: "/images/services/glass-partitions.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about glass office partitions and cabin installation in Ayodhya. Please share available profiles, glass options, and quotations.",
     intro: "Modern office environments, financial consultancy firms, clinics, and commercial studios require space division that balances executive privacy with visual openness, collaborative daylight transfer, and a prestigious corporate image. Traditional brick or drywall partitions make offices feel dark, cramped, and disconnected. Glass partition systems allow natural light to flow across deep floor plans while creating sound-dampened private executive cabins and meeting rooms. In Ayodhya, we install premium frameless toughened glass partitions, slim-line black aluminum grid systems, and acoustic laminated glass walls.",
     types: [
@@ -362,7 +362,7 @@ export const exteriorServices = [
     metaTitle: "Aluminium Doors & Windows in Ayodhya | Sliding & Casement Glazing",
     metaDescription: "Aluminium doors and windows in Ayodhya. Heavy-gauge sliding windows, casement doors, slim architectural profile glazing, airtight weather seals & toughened glass.",
     heroBadge: "Architectural Glazing Systems • Ayodhya",
-    heroImage: "/images/services/aluminium-doors.jpg",
+    heroImage: "/images/services/aluminium-doors.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about aluminium doors and windows in Ayodhya. Please share available profile series, glass options, and price estimates.",
     intro: "Windows and exterior doors define how your home breathes, how much natural sunlight fills your living spaces, and how effectively street noise, monsoon rain, and summer heat are kept outside. While old wooden frames swell in the monsoon, warp, rot, and invite termites, modern architectural aluminium systems provide slim, elegant sightlines, massive glass spans, and lifelong structural stability. In Ayodhya, we fabricate and install heavy-gauge aluminium sliding windows, casement doors, French balcony sliders, and slim-line structural glazing systems equipped with airtight EPDM weatherstripping and multipoint locks.",
     types: [

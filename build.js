@@ -91,7 +91,7 @@ async function build() {
     url: "/",
     priority: "1.0",
     changefreq: "weekly",
-    image: { url: "/images/hero/hero-architectural.jpg", title: "Ayodhya Interiors & Exterior Studio Architectural Concept" }
+    image: { url: "/images/hero/hero-architectural.webp", title: "Ayodhya Interiors & Exterior Studio Architectural Concept" }
   });
   console.log("✓ Homepage built: /");
 
@@ -190,7 +190,7 @@ async function build() {
     url: "/guides/",
     priority: "0.8",
     changefreq: "weekly",
-    image: { url: "/images/guides/guide-kitchen.jpg", title: "Modular Kitchen Advice Guide in Ayodhya" }
+    image: { url: "/images/guides/guide-kitchen.webp", title: "Modular Kitchen Advice Guide in Ayodhya" }
   });
   console.log("✓ Guides Page built: /guides/");
 

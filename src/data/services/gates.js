@@ -18,7 +18,7 @@ export const gateServices = [
     metaTitle: "Main Gate Design & Installation in Ayodhya | Custom Entrance Gates",
     metaDescription: "Custom main gate design and installation in Ayodhya. Heavy-duty swing, sliding & double-leaf entrance gates fabricated in steel, wrought iron & laser-cut metal.",
     heroBadge: "Bespoke Entrance Gate Engineering • Ayodhya",
-    heroImage: "/images/services/main-gates.jpg",
+    heroImage: "/images/services/main-gates.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about main gate design and installation in Ayodhya. Please share available gate designs, metal options, and quotations.",
     intro: "Your main entrance gate is the very first architectural statement visitors see, defining your property's security, privacy, and curb appeal. A poorly fabricated gate sags on its hinges, scrapes the driveway, rusts at the joints, and rattles violently in the wind. In Ayodhya, we engineer and install heavy-duty custom entrance gates built to withstand decades of daily vehicular and pedestrian traffic. Whether you require a space-saving sliding gate, a stately double-leaf swing gate, or a contemporary privacy design with wood-look composite infills, our systems are fabricated with structural precision and finished with anti-corrosion powder coatings.",
     types: [
@@ -133,7 +133,7 @@ export const gateServices = [
     metaTitle: "CNC-Cut Gates in Ayodhya | Custom Laser-Cut Metal Entrance Gates",
     metaDescription: "Bespoke CNC-cut and laser-cut entrance gates in Ayodhya. Heavy-gauge metal jali sheets with custom geometric & traditional patterns, sturdy frames & powder coating.",
     heroBadge: "Laser-Cut Architectural Gates • Ayodhya",
-    heroImage: "/images/services/cnc-gates.jpg",
+    heroImage: "/images/services/cnc-gates.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about CNC-cut and laser-cut gates in Ayodhya. Please share available jali catalog designs, steel gauges, and estimates.",
     intro: "The entrance gate is the focal centerpiece of your property's exterior architecture. While traditional gates relied on repetitive vertical metal bars or standard forged spearheads, laser-cutting technology allows you to transform entrance gates into breathtaking architectural centerpieces. Using high-power industrial fiber laser machines, we cut heavy-gauge solid steel sheets into sophisticated geometric lattices, modern Moroccan jalis, traditional mandalas, or personalized family insignias. Every CNC panel is framed within heavy structural steel sections to ensure structural integrity and long-term security.",
     types: [
@@ -248,7 +248,7 @@ export const gateServices = [
     metaTitle: "Steel & Iron Gates in Ayodhya | Mild Steel & Wrought Iron Main Gates",
     metaDescription: "Custom steel and iron gate fabrication in Ayodhya. Heavy-duty mild steel (MS), wrought iron, and SS 304 main gates built for security, longevity & style.",
     heroBadge: "Heavy Structural Metalwork • Ayodhya",
-    heroImage: "/images/services/steel-iron-gates.jpg",
+    heroImage: "/images/services/steel-iron-gates.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about steel and iron gate fabrication in Ayodhya. Please share available gate designs, metal gauges, and quotations.",
     intro: "For property owners who prioritize robust perimeter security, heavy structural deterrence, and timeless architectural presence, steel and iron gates remain the gold standard. However, the lifespan of a metal gate depends entirely on the gauge of raw steel used, the penetration depth of structural welds, and the quality of anti-corrosion surface treatments. In Ayodhya, we fabricate custom mild steel (MS) entrance gates, hand-forged wrought-iron gates, and modern stainless steel (SS 304) systems that deliver formidable physical protection with smooth, effortless operation.",
     types: [
@@ -363,7 +363,7 @@ export const gateServices = [
     metaTitle: "Sliding Gates in Ayodhya | Track & Cantilever Driveway Entrance Gates",
     metaDescription: "Custom sliding gate installation in Ayodhya. Space-saving track & cantilever driveway gates engineered for smooth manual glide and motorized automation.",
     heroBadge: "Space-Saving Driveway Systems • Ayodhya",
-    heroImage: "/images/services/sliding-gates.jpg",
+    heroImage: "/images/services/sliding-gates.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about sliding gate installation in Ayodhya. Please share available sliding systems, ground track requirements, and quotations.",
     intro: "While swing gates require substantial clear driveway depth to swing open inward, many modern homes, commercial plots, and properties in Ayodhya have compact parking spaces or upward-sloping driveways where swing gates are impossible to operate. A sliding gate slides horizontally along your boundary wall, consuming zero driveway or parking space. In Ayodhya, we engineer and install heavy-duty track-based sliding gates and specialized cantilever sliding systems built for effortless manual glide or future motorized automation.",
     types: [
@@ -478,7 +478,7 @@ export const gateServices = [
     metaTitle: "Window Grill Design & Installation in Ayodhya | Modern Security Grills",
     metaDescription: "Custom window grill fabrication in Ayodhya. Modern horizontal slats, decorative laser-cut jalis & heavy-duty burglar-proof security grills for homes & offices.",
     heroBadge: "Architectural Window Security • Ayodhya",
-    heroImage: "/images/services/window-grills.jpg",
+    heroImage: "/images/services/window-grills.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about window grill design and installation in Ayodhya. Please share available designs, metal specifications, and quotations.",
     intro: "Windows provide essential natural daylight and fresh air ventilation, but on ground and lower floors, they represent the primary vulnerability for home intrusions and accidental falls. A poorly designed window grill either looks like an oppressive prison cage or rusts and stains the exterior wall plaster with dirty brown streaks during every rainstorm. In Ayodhya, we design, fabricate, and install architectural security window grills that harmonize with your home's exterior elevation while providing formidable, unyielding protection.",
     types: [

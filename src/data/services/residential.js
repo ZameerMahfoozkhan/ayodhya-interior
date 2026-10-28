@@ -19,7 +19,7 @@ export const residentialServices = [
     metaTitle: "Complete Home Interior Design & Execution in Ayodhya | Turnkey Solutions",
     metaDescription: "Comprehensive home interior planning and execution in Ayodhya. Modular kitchens, custom wardrobes, ceilings, and paneling tailored to your floor plan.",
     heroBadge: "Turnkey Residential Interiors • Ayodhya",
-    heroImage: "/images/services/home-interiors.jpg",
+    heroImage: "/images/services/home-interiors.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about complete home interior solutions in Ayodhya. Please guide me regarding planning, site measurements, and an estimate.",
     intro: "Transforming an empty flat, independent house, or newly built villa in Ayodhya into a functional, beautiful living space requires thoughtful spatial planning and disciplined coordination. Rather than hiring separate painters, carpenters, ceiling contractors, and panel installers whose work frequently clashes, our complete home interior service provides a cohesive, single-point execution model. We tailor every layout to the lifestyle, storage needs, and aesthetic preferences of your family, ensuring that materials, ergonomics, lighting, and joinery harmonize seamlessly.",
     types: [
@@ -134,7 +134,7 @@ export const residentialServices = [
     metaTitle: "Modular Kitchen Design & Installation in Ayodhya | Custom Kitchen Cabinets",
     metaDescription: "Custom modular kitchens in Ayodhya. BWP marine-ply cabinets, acrylic & matte shutters, tandem drawers, corner units, and stainless steel organizers.",
     heroBadge: "Bespoke Kitchen Engineering • Ayodhya",
-    heroImage: "/images/services/modular-kitchen.jpg",
+    heroImage: "/images/services/modular-kitchen.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about modular kitchen design and installation in Ayodhya. Please provide details on layout options, materials, and pricing.",
     intro: "The kitchen is the functional heart of an Indian home, where vigorous cooking, turmeric, steam, oil sputtering, and frequent washing demand resilient construction. A successful modular kitchen must balance smart storage ergonomics with uncompromising resistance to water, heat, and pests. In Ayodhya, we engineer custom modular kitchens tailored to regional cooking styles, ensuring your spice jars, heavy pressure cookers, kadhais, and daily utensils have designated, smooth-sliding storage spaces.",
     types: [
@@ -249,7 +249,7 @@ export const residentialServices = [
     metaTitle: "Custom Furniture & Wardrobes in Ayodhya | Bespoke Bedroom & Living Units",
     metaDescription: "Custom made-to-measure furniture in Ayodhya. Built-in sliding wardrobes, hydraulic storage beds, pooja mandirs, and study consoles built to exact dimensions.",
     heroBadge: "Made-to-Measure Joinery • Ayodhya",
-    heroImage: "/images/services/custom-furniture.jpg",
+    heroImage: "/images/services/custom-furniture.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about custom furniture and wardrobe making in Ayodhya. Please guide me regarding designs, materials, and quotations.",
     intro: "Mass-produced retail furniture purchased online or from retail showrooms often fails in real Indian homes—either leaving awkward dust-gathering gaps against walls or wasting precious ceiling height. Our custom furniture service provides made-to-measure joinery manufactured precisely to your room's exact architectural dimensions. From full-height wardrobes with customized internal storage to hydraulic storage beds, pooja mandirs, and compact work desks, we build long-lasting pieces that maximize every inch of floor space.",
     types: [
@@ -364,7 +364,7 @@ export const residentialServices = [
     metaTitle: "Modern TV Unit Design & Media Walls in Ayodhya | Custom Living Room Units",
     metaDescription: "Custom TV unit design and feature wall installation in Ayodhya. Floating media consoles, fluted louvers, UV marble backdrops, and concealed wire management.",
     heroBadge: "Architectural Media Consoles • Ayodhya",
-    heroImage: "/images/services/tv-units.jpg",
+    heroImage: "/images/services/tv-units.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about TV unit design and feature wall installation in Ayodhya. Please share design options and an estimate.",
     intro: "The television feature wall serves as the primary visual focal point of the modern living room. A poorly conceived TV setup leaves unsightly tangled wires, cluttered set-top boxes, and disjointed wall art. Our custom TV unit installations combine architectural backdrop paneling—such as charcoal fluted louvers, acoustic slats, and glossy UV marble sheets—with floating storage consoles and warm LED profile illumination. We engineer built-in wire conduits so your screen appears effortlessly suspended against a striking backdrop.",
     types: [
@@ -479,7 +479,7 @@ export const residentialServices = [
     metaTitle: "False Ceiling Contractors in Ayodhya | Gypsum & PVC Ceilings with Cove Lighting",
     metaDescription: "Professional false ceiling design and installation in Ayodhya. Saint-Gobain gypsum ceilings, moisture-resistant PVC ceilings, cove lighting & acoustic layouts.",
     heroBadge: "Architectural Ceiling Solutions • Ayodhya",
-    heroImage: "/images/services/false-ceilings.jpg",
+    heroImage: "/images/services/false-ceilings.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about false ceiling installation in Ayodhya. Please share details on gypsum/PVC options, lighting designs, and pricing.",
     intro: "A thoughtfully designed false ceiling does far more than conceal raw concrete slabs and electrical wiring—it dramatically shapes room acoustics, thermal insulation, and the visual mood of your home. In Ayodhya's hot summer climate, an insulated gypsum false ceiling creates a cooling thermal barrier that significantly reduces air conditioning power consumption. We design and install precision-leveled ceiling systems ranging from minimalist perimeter coves with indirect warm lighting to moisture-resistant PVC ceilings for balconies, kitchens, and bathrooms.",
     types: [
@@ -594,7 +594,7 @@ export const residentialServices = [
     metaTitle: "Flooring Installation in Ayodhya | SPC, Vinyl & Wooden Laminate Flooring",
     metaDescription: "Professional SPC flooring, luxury vinyl tiles, and wooden laminate flooring in Ayodhya. 100% waterproof click-lock planks, scratch-resistant finishes & quick installation.",
     heroBadge: "Engineered Flooring • Ayodhya",
-    heroImage: "/images/services/flooring.jpg",
+    heroImage: "/images/services/flooring.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about SPC, vinyl, or wooden flooring installation in Ayodhya. Please provide details on product options, subfloor requirements, and estimates.",
     intro: "Flooring defines the sensory foundation of any interior—influencing warmth underfoot, sound reflection, and everyday cleaning effort. While traditional marble and ceramic tiles require messy cement breaking, long curing times, and easily stained grout lines, modern engineered flooring systems provide rapid, high-durability alternatives. In Ayodhya, we specialize in high-density SPC (Stone Plastic Composite) click-lock flooring, luxury vinyl planks (LVP), and commercial-grade laminate wooden flooring that can frequently be installed directly over your existing sound tiles in a single weekend.",
     types: [

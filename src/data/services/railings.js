@@ -18,7 +18,7 @@ export const railingServices = [
     metaTitle: "Staircase Railing Installation in Ayodhya | Glass, SS 304, MS & CNC Railings",
     metaDescription: "Custom staircase railings in Ayodhya. Certified safety glass, SS 304 stainless steel, wrought iron, and precision CNC-cut metal balustrades for homes & offices.",
     heroBadge: "Engineered Staircase Safety • Ayodhya",
-    heroImage: "/images/services/staircase-railings.jpg",
+    heroImage: "/images/services/staircase-railings.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about staircase railing installation in Ayodhya. Please share railing design options, materials, and quotations.",
     intro: "A staircase railing is not merely a decorative balustrade; it is a critical life-safety barrier that must endure daily human leaning, hand impact, and stair vibration without loosening over decades. In Ayodhya, where multi-storey family homes, duplex apartments, and commercial complexes demand both rigorous safety and contemporary architectural elegance, we fabricate and install precision-engineered staircase railings. From minimalist frameless toughened glass with side spigots to grade 304 stainless steel and laser-cut CNC metal screens, our systems are built for lasting stability.",
     types: [
@@ -133,7 +133,7 @@ export const railingServices = [
     metaTitle: "Glass Railing Contractors in Ayodhya | Frameless & Spigot Glass Systems",
     metaDescription: "Modern glass railing installation in Ayodhya. 12mm toughened & laminated safety glass, SS 304 spigots, continuous base channels, and sleek slotted handrails.",
     heroBadge: "Architectural Safety Glazing • Ayodhya",
-    heroImage: "/images/services/glass-railings.jpg",
+    heroImage: "/images/services/glass-railings.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about glass railing installation in Ayodhya. Please share details on frameless/spigot options, glass thickness, and pricing.",
     intro: "Modern architectural design is defined by clean lines, unobstructed sightlines, and generous natural daylight. Bulky traditional metal grills and dense concrete parapet walls divide spaces and block outdoor views. Glass railing systems deliver an expansive, ultra-contemporary aesthetic while providing certified fall-protection safety. In Ayodhya, we engineer and install frameless glass balustrades, heavy-duty stainless steel spigot systems, and concealed aluminum shoe channels for interior stairways, double-height atriums, and outdoor balcony terraces.",
     types: [
@@ -248,7 +248,7 @@ export const railingServices = [
     metaTitle: "Steel & Iron Railings in Ayodhya | SS 304, MS & Wrought Iron Balustrades",
     metaDescription: "Custom steel and iron railing fabrication in Ayodhya. Certified SS 304 stainless steel, heavy mild steel, and classic wrought-iron staircase & balcony railings.",
     heroBadge: "Custom Metal Fabrication • Ayodhya",
-    heroImage: "/images/services/steel-iron-railings.jpg",
+    heroImage: "/images/services/steel-iron-railings.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about steel and iron railing fabrication in Ayodhya. Please share available designs, pipe gauges, and price estimates.",
     intro: "When maximum structural rigidity, long-term impact strength, and budget-friendly durability are required, steel and iron railings remain the most proven architectural choice. However, the quality of metal railings varies dramatically based on raw metal gauge, weld finish, and protective anti-rust coatings. In Ayodhya, we fabricate precision stainless steel (SS 304) systems with mirror or satin brush finishes, alongside heavy-duty mild steel (MS) and ornate hand-forged wrought-iron balustrades protected by electrostatic powder coating.",
     types: [
@@ -363,7 +363,7 @@ export const railingServices = [
     metaTitle: "CNC-Cut Railings in Ayodhya | Laser-Cut Metal Jali Balustrades",
     metaDescription: "Custom CNC-cut and laser-cut railings in Ayodhya. Architectural sheet metal balustrades with geometric, Islamic & floral jali designs, heavy frames & powder coating.",
     heroBadge: "Laser-Cut Sheet Metal Railings • Ayodhya",
-    heroImage: "/images/services/cnc-railings.jpg",
+    heroImage: "/images/services/cnc-railings.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about CNC-cut and laser-cut railings in Ayodhya. Please share available jali patterns, metal thicknesses, and price estimates.",
     intro: "Traditional railings made of simple parallel pipes or repetitive vertical bars often feel monotonous and uninspired. Laser-cutting and CNC metal fabrication have revolutionized architectural balustrades, enabling homeowners to turn staircase and balcony guards into bespoke works of decorative art. Using high-precision fiber laser machinery, we cut solid mild steel, stainless steel, and aluminum plates into intricate geometric motifs, traditional jalis, organic tree branches, and contemporary abstract screens. Each panel is engineered into a rigid outer perimeter frame with durable powder-coated finishing.",
     types: [
@@ -478,7 +478,7 @@ export const railingServices = [
     metaTitle: "Balcony Railing Contractors in Ayodhya | Glass, SS 304 & Metal Balustrades",
     metaDescription: "Weather-resistant balcony railings in Ayodhya. 12mm toughened safety glass, SS 304 stainless steel, and decorative CNC metal guardrails for homes & apartments.",
     heroBadge: "Exterior Terrace Balustrades • Ayodhya",
-    heroImage: "/images/services/balcony-railings.jpg",
+    heroImage: "/images/services/balcony-railings.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about balcony railing installation in Ayodhya. Please share design options, safety specifications, and price estimates.",
     intro: "A balcony railing serves as both a primary facade feature defining your home's street appeal and a critical life-safety barrier guarding family members against fatal falls. Unlike interior staircases, outdoor balcony railings face extreme weather in Ayodhya—from blistering 45°C summer sun and heavy monsoon downpours to winter fog. This environment demands corrosion-proof materials, robust concrete anchoring, and water-shedding drainage details. We engineer and install high-durability balcony guardrails combining certified safety glass, SS 304 stainless steel, and exterior-coated architectural metals.",
     types: [

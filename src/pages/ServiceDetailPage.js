@@ -128,7 +128,7 @@ export function renderServiceDetailPage(service) {
 
   return `
     <!-- SERVICE HERO SECTION (H1 + Background Architectural Media + Quick CTA) -->
-    <section class="page-hero service-hero" style="background-image: linear-gradient(to right, rgba(20, 24, 20, 0.94) 0%, rgba(20, 24, 20, 0.86) 48%, rgba(20, 24, 20, 0.58) 100%), url('${service.heroImage || '/images/hero/hero-architectural.jpg'}');">
+    <section class="page-hero service-hero" style="background-image: linear-gradient(to right, rgba(20, 24, 20, 0.94) 0%, rgba(20, 24, 20, 0.86) 48%, rgba(20, 24, 20, 0.58) 100%), url('${service.heroImage || '/images/hero/hero-architectural.webp'}');">
       <div class="container">
         ${breadcrumbHtml}
         <div class="service-hero-grid">

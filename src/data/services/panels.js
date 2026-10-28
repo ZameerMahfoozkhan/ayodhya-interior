@@ -17,7 +17,7 @@ export const panelServices = [
     metaTitle: "PVC Wall Panel Installation in Ayodhya | Waterproof Decorative Wall Cladding",
     metaDescription: "Professional PVC wall panel installation in Ayodhya. 100% termite-proof, moisture-resistant wall cladding for damp walls, living rooms, shops & offices.",
     heroBadge: "Waterproof Wall Paneling • Ayodhya",
-    heroImage: "/images/services/pvc-panels.jpg",
+    heroImage: "/images/services/pvc-panels.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about PVC wall panel installation in Ayodhya. Please share panel styles, site measurement details, and estimates.",
     intro: "Persistent wall dampness, peeling paint, white efflorescence, and recurring plaster damage are common headaches across homes and commercial properties in Ayodhya. While recurring scraping and repainting only masks moisture for a few months, interlocking PVC wall panels provide a durable, wipe-clean decorative barrier. Installed on lightweight wooden or GI battens over the affected masonry, PVC panels completely hide unsightly dampness, eliminate annual painting expenses, and instantly modernize residential and commercial interiors.",
     types: [
@@ -133,7 +133,7 @@ export const panelServices = [
     metaTitle: "WPC Wall Panels in Ayodhya | Wood-Plastic Composite Fluted Wall Cladding",
     metaDescription: "High-density WPC wall panels in Ayodhya. Wood-Plastic Composite fluted slats and exterior-approved cladding with realistic timber grain, water & termite immunity.",
     heroBadge: "Composite Timber Cladding • Ayodhya",
-    heroImage: "/images/services/wpc-panels.jpg",
+    heroImage: "/images/services/wpc-panels.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about WPC wall panel installation in Ayodhya. Please share product specifications, indoor/outdoor options, and quotations.",
     intro: "For property owners who love the rich, organic beauty of natural wood paneling but dread the reality of termite damage, seasonal warping, and periodic varnish repolishing, WPC (Wood-Plastic Composite) is the ultimate architectural solution. Composed of reclaimed wood fiber, virgin thermoplastics, and specialized bonding polymers, WPC combines the tactile warmth of real timber with the impervious durability of high-density polymers. In Ayodhya, we install premium WPC fluted louvers and wall cladding for luxury residential living rooms, bed backdrops, and exterior-rated elevation features.",
     types: [
@@ -249,7 +249,7 @@ export const panelServices = [
     metaTitle: "Fluted Wall Panels & Louvers in Ayodhya | Architectural Slat Feature Walls",
     metaDescription: "Fluted wall panels and architectural louvers in Ayodhya. Charcoal louvers, WPC slats, and vertical ribbed panels for luxury TV backdrops, bedrooms & office accents.",
     heroBadge: "Architectural Slat Panels • Ayodhya",
-    heroImage: "/images/services/fluted-louvers.jpg",
+    heroImage: "/images/services/fluted-louvers.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about fluted panels and louvers in Ayodhya. Please share available profile designs, color swatches, and estimates.",
     intro: "In high-end contemporary interior design, flat painted walls are increasingly replaced by three-dimensional tactile surfaces that play with light and shadow. Fluted panels and decorative architectural louvers—often colloquially termed 'lowers' or 'slats'—feature parallel vertical ribs that add immediate architectural texture, visual height, and luxury warmth to any room. In Ayodhya, we install premium charcoal composite louvers, WPC woodgrain slats, and acoustic ribbed panels engineered to transform plain walls into captivating design statements.",
     types: [
@@ -365,7 +365,7 @@ export const panelServices = [
     metaTitle: "UV Marble Sheets in Ayodhya | High-Gloss PVC Faux Marble Wall Panels",
     metaDescription: "UV marble sheets in Ayodhya. Seamless 8x4 ft high-gloss faux Italian marble wall cladding with UV coating. Ideal for TV walls, lobbies & bathroom dry areas.",
     heroBadge: "High-Gloss Faux Marble • Ayodhya",
-    heroImage: "/images/services/uv-marble.jpg",
+    heroImage: "/images/services/uv-marble.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about UV marble sheet installation in Ayodhya. Please share pattern options, sheet sizes, and an estimate.",
     intro: "Natural Italian marble like Statuario, Carrara, and Nero Marquina exudes timeless luxury, but heavy slabs come with exorbitant material costs, laborious stone cutting, structural slab load limitations, and high vulnerability to acidic staining. UV marble sheets—also known as PVC marble slabs—deliver the dazzling mirror-gloss finish and dramatic natural veining of imported marble at a fraction of the weight, thickness, and cost. In Ayodhya, we install premium 8x4 foot, 3mm thick UV marble sheets for living room TV backdrops, entrance foyers, and commercial feature walls.",
     types: [

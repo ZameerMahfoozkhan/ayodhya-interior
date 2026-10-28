@@ -17,7 +17,7 @@ export const commercialServices = [
     metaTitle: "Office Interior Designers & Fit-Out Contractors in Ayodhya | Modern Workspaces",
     metaDescription: "Turnkey office interior fit-outs in Ayodhya. Modular workstations, executive glass cabins, reception desks, conference rooms, false ceilings & data cabling.",
     heroBadge: "Modern Commercial Workspaces • Ayodhya",
-    heroImage: "/images/services/office-interiors.jpg",
+    heroImage: "/images/services/office-interiors.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about office interior design and fit-out in Ayodhya. Please share details on workstation layouts, cabin partitions, and project estimates.",
     intro: "A modern commercial office must do far more than provide desks and chairs—it shapes employee productivity, client confidence, technological workflow, and brand prestige. In Ayodhya's rapidly growing commercial landscape, businesses, consultancy firms, and financial organizations require functional workspaces designed for maximum spatial efficiency and low maintenance. We deliver comprehensive commercial office fit-outs, coordinating space planning, modular workstations, executive glass cabins, acoustic grid false ceilings, structured data cabling channels, and custom reception joinery.",
     types: [
@@ -132,7 +132,7 @@ export const commercialServices = [
     metaTitle: "Shop & Showroom Interior Designers in Ayodhya | Retail Display & Fit-Outs",
     metaDescription: "Retail shop and commercial showroom interiors in Ayodhya. Custom display racks, glass showcases, cash billing counters, storefront glazing & high-CRI lighting.",
     heroBadge: "High-Conversion Retail Architecture • Ayodhya",
-    heroImage: "/images/services/showroom-interiors.jpg",
+    heroImage: "/images/services/showroom-interiors.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about shop or showroom interior fit-out in Ayodhya. Please share details on retail display systems, counters, and estimates.",
     intro: "In the retail sector, effective interior design is a direct sales driver. A crowded, poorly illuminated shop overwhelms shoppers and diminishes the perceived value of your merchandise, while a well-zoned showroom guides customer movement, highlights premium products, and maximizes average transaction value. In Ayodhya, we design and execute high-conversion retail store and showroom interiors across apparel, jewelry, electronics, hardware, eyewear, and departmental stores, providing custom display joinery, glass showcases, cashier counters, and high-CRI accent lighting.",
     types: [
@@ -247,7 +247,7 @@ export const commercialServices = [
     metaTitle: "Clinic & Hospital Interior Fit-Outs in Ayodhya | Medical Space Solutions",
     metaDescription: "Healthcare and clinic interior fit-outs in Ayodhya. Hygienic consultation rooms, reception counters, patient waiting lounges, glass cubicles & sanitary storage.",
     heroBadge: "Hygienic Medical Interiors • Ayodhya",
-    heroImage: "/images/services/clinic-interiors.jpg",
+    heroImage: "/images/services/clinic-interiors.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about clinic or hospital interior fit-out in Ayodhya. Please share details on consultation cabins, reception furniture, and quotations.",
     intro: "Healthcare and medical clinic interiors require a specialized approach focused on infection prevention, durable wipe-down surfaces, patient acoustic privacy, and soothing aesthetics that ease anxiety. From private doctors' consultation chambers and dental clinics to diagnostic reception centers and administrative hospital wards, every surface must endure aggressive clinical sanitization without degrading. In Ayodhya, we deliver practical, hygienic medical interior fit-outs, coordinating anti-bacterial surfaces, private consultation glass partitions, organized medical storage cabinetry, and comfortable patient waiting lounges.",
     types: [
@@ -362,7 +362,7 @@ export const commercialServices = [
     metaTitle: "School & Educational Interior Contractors in Ayodhya | Institutional Fit-Outs",
     metaDescription: "Educational and school interior fit-outs in Ayodhya. Durable administrative offices, staff rooms, student lockers, library shelving, reception desks & storage.",
     heroBadge: "Durable Educational Architecture • Ayodhya",
-    heroImage: "/images/services/school-interiors.jpg",
+    heroImage: "/images/services/school-interiors.webp",
     whatsappPrompt: "Hello, I found your website and would like to enquire about school or educational institution interior fit-out in Ayodhya. Please share details on staff room furniture, lockers, and estimates.",
     intro: "Educational institutions require interior infrastructure built to an entirely different standard of durability, safety, and functionality. With hundreds of energetic students using facilities daily, school interiors face heavy physical wear, backpack scuffs, and constant impact. At the same time, school administrative offices, principal chambers, and staff rooms must project institutional prestige, discipline, and organized pedagogical efficiency. In Ayodhya, we design and install rugged, ergonomic school fit-outs covering administrative suites, staff workstations, student locker banks, library book racks, and welcoming visitor reception lounges.",
     types: [
