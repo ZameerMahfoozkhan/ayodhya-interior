@@ -29,9 +29,9 @@ export function renderContactPage() {
 
     <section class="section">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1.3fr; gap: 48px; align-items: flex-start;">
+        <div class="contact-page-grid">
           <!-- Left Column: Contact Methods & Preparation Advice -->
-          <div>
+          <div class="contact-page-info">
             <div class="bezel-card" style="margin-bottom: 24px;">
               <div class="bezel-card-inner">
                 <h3 style="font-size: 1.3rem; margin-bottom: 16px;">Direct Contact Details</h3>
@@ -108,7 +108,7 @@ export function renderContactPage() {
           </div>
 
           <!-- Right Column: Interactive WhatsApp Enquiry Form -->
-          <div>
+          <div class="contact-page-form-col">
             ${renderEnquiryForm()}
           </div>
         </div>

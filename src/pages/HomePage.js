@@ -352,7 +352,7 @@ export function renderHomePage() {
           </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px;">
+        <div class="pathways-grid">
           <!-- Residential Pathway -->
           <div class="bezel-card">
             <div class="bezel-card-inner">
@@ -437,7 +437,7 @@ export function renderHomePage() {
           </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+        <div class="why-choose-grid">
           <!-- Mat 1: PVC vs WPC -->
           <div style="background-color: var(--card-bg); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 24px;">
             <h3 style="font-size: 1.15rem; margin-bottom: 8px;">PVC & WPC Composites</h3>
@@ -530,7 +530,7 @@ export function renderHomePage() {
           </p>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <div class="materials-features-grid">
           <div class="bezel-card">
             <div class="bezel-card-inner">
               <div style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--accent-sage-light); display: flex; align-items: center; justify-content: center; margin-bottom: 16px;">
@@ -645,7 +645,7 @@ export function renderHomePage() {
     <section class="section">
       <div class="container">
         <div style="background-color: var(--card-bg); border: 1px solid var(--border-light); border-radius: var(--radius-xl); padding: var(--space-2xl); box-shadow: var(--shadow-card);">
-          <div style="display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: center;">
+          <div class="home-service-area-grid">
             <div>
               <span class="section-eyebrow">Local Commitment</span>
               <h2 style="font-size: 2rem; margin-bottom: 14px;">Serving Homeowners & Businesses Across Ayodhya</h2>
@@ -700,8 +700,8 @@ export function renderHomePage() {
     <!-- SECTION 12: FINAL CALL TO ACTION & ENQUIRY FORM -->
     <section class="section">
       <div class="container">
-        <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 40px; align-items: flex-start;">
-          <div>
+        <div class="service-final-cta-grid">
+          <div class="service-final-cta-info">
             <span class="section-eyebrow">Start Your Project</span>
             <h2 style="font-size: 2.2rem; margin-bottom: 16px;">Planning an Interior, Exterior or Renovation Project?</h2>
             <p style="color: var(--text-secondary); line-height: 1.7; font-size: 1.05rem; margin-bottom: 24px;">
@@ -741,7 +741,7 @@ export function renderHomePage() {
             </div>
           </div>
 
-          <div>
+          <div class="service-final-cta-form-col">
             ${renderEnquiryForm()}
           </div>
         </div>

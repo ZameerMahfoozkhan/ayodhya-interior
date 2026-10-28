@@ -41,7 +41,7 @@ export function renderNotFoundPage() {
 
         <div style="background-color: var(--card-bg); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 24px; text-align: left;">
           <h3 style="font-size: 1.1rem; margin-bottom: 12px; color: var(--text-primary);">Looking for specific solutions in Ayodhya?</h3>
-          <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; font-size: 0.9rem;">
+          <ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr)); gap: 8px; font-size: 0.9rem;">
             <li><a href="/home-interiors-ayodhya/">Home Interiors</a></li>
             <li><a href="/modular-kitchen-ayodhya/">Modular Kitchens</a></li>
             <li><a href="/pvc-wall-panels-ayodhya/">PVC Wall Panels</a></li>

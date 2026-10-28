@@ -211,8 +211,8 @@ export function renderServiceDetailPage(service) {
             <div style="margin-bottom: 48px;">
               <span class="section-eyebrow">Objective Assessment</span>
               <h2 style="font-size: 1.8rem; margin-bottom: 16px;">Benefits & Practical Limitations</h2>
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 16px;">
-                <div style="background-color: var(--accent-sage-light); border: 1px solid rgba(102, 122, 104, 0.2); border-radius: var(--radius-lg); padding: 20px;">
+              <div class="pros-cons-grid">
+                <div style="background-color: var(--accent-sage-light); border: 1px solid rgba(45, 74, 52, 0.18); border-radius: var(--radius-lg); padding: 20px;">
                   <h4 style="font-size: 1.05rem; color: var(--accent-sage-dark); margin-bottom: 12px; display: flex; align-items: center; gap: 6px;">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                     <span>Key Advantages</span>
@@ -316,7 +316,7 @@ export function renderServiceDetailPage(service) {
     <section class="section section-muted" id="estimate-form" style="border-top: 1px solid var(--border-light); scroll-margin-top: 80px;">
       <div class="container">
         <div class="service-final-cta-grid">
-          <div>
+          <div class="service-final-cta-info">
             <span class="section-eyebrow">Direct Studio Consultation</span>
             <h2 style="font-size: clamp(1.8rem, 3vw, 2.3rem); margin-bottom: 16px; line-height: 1.25;">Request an Estimate for ${service.title}</h2>
             <p style="color: var(--text-secondary); line-height: 1.7; font-size: 1.02rem; margin-bottom: 24px;">
@@ -352,7 +352,7 @@ export function renderServiceDetailPage(service) {
             </div>
           </div>
 
-          <div>
+          <div class="service-final-cta-form-col">
             ${renderEnquiryForm(service.title)}
           </div>
         </div>
