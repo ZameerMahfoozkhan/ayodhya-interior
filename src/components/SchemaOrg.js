@@ -117,3 +117,75 @@ export function buildServiceSchema(service, breadcrumbItems = []) {
 
   return `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`;
 }
+
+/**
+ * Category Page Specific Schema (CollectionPage + ItemList + BreadcrumbList + FAQPage)
+ */
+export function buildCategorySchema(category, services = [], breadcrumbItems = []) {
+  const graph = [];
+
+  // CollectionPage
+  graph.push({
+    "@type": "CollectionPage",
+    "@id": `${siteConfig.siteUrl}${category.url}#collection`,
+    "name": `${category.name} in Ayodhya | ${siteConfig.brandName}`,
+    "url": `${siteConfig.siteUrl}${category.url}`,
+    "description": category.metaDescription,
+    "provider": {
+      "@type": "HomeAndConstructionBusiness",
+      "@id": `${siteConfig.siteUrl}/#organization`,
+      "name": siteConfig.brandName,
+      "telephone": siteConfig.phoneRaw
+    }
+  });
+
+  // ItemList of services
+  if (services && services.length > 0) {
+    graph.push({
+      "@type": "ItemList",
+      "name": `${category.name} Services in Ayodhya`,
+      "itemListElement": services.map((s, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": s.title,
+        "url": `${siteConfig.siteUrl}/${s.slug}/`
+      }))
+    });
+  }
+
+  // Breadcrumbs
+  if (breadcrumbItems && breadcrumbItems.length > 0) {
+    graph.push({
+      "@type": "BreadcrumbList",
+      "itemListElement": breadcrumbItems.map((item, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": item.name,
+        "item": item.url ? `${siteConfig.siteUrl}${item.url}` : undefined
+      }))
+    });
+  }
+
+  // FAQs
+  if (category.faqs && category.faqs.length > 0) {
+    graph.push({
+      "@type": "FAQPage",
+      "mainEntity": category.faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer
+        }
+      }))
+    });
+  }
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": graph
+  };
+
+  return `<script type="application/ld+json">${JSON.stringify(schema, null, 2)}</script>`;
+}
+

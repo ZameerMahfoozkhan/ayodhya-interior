@@ -48,8 +48,8 @@ export const siteConfig = {
       isMega: true,
       categories: [
         {
-          name: "Residential Interiors",
-          url: "/home-interiors-ayodhya/",
+          name: "Home Interior",
+          url: "/services/home-interior/",
           items: [
             { title: "Complete Home Interiors", url: "/home-interiors-ayodhya/", desc: "Turnkey residential design and execution" },
             { title: "Modular Kitchens", url: "/modular-kitchen-ayodhya/", desc: "Ergonomic, modern kitchen cabinets & storage" },
@@ -61,7 +61,7 @@ export const siteConfig = {
         },
         {
           name: "Wall Panels & Finishes",
-          url: "/pvc-wall-panels-ayodhya/",
+          url: "/services/wall-panels-finishes/",
           items: [
             { title: "PVC Wall Panels", url: "/pvc-wall-panels-ayodhya/", desc: "Moisture-resistant decorative wall cladding" },
             { title: "WPC Wall Panels", url: "/wpc-wall-panels-ayodhya/", desc: "Durable composite fluted & slatted panels" },
@@ -71,7 +71,7 @@ export const siteConfig = {
         },
         {
           name: "Gates & Fabrication",
-          url: "/main-gate-installation-ayodhya/",
+          url: "/services/gates-fabrication/",
           items: [
             { title: "Main Gate Installation", url: "/main-gate-installation-ayodhya/", desc: "Custom entrance swing & sliding gates" },
             { title: "CNC-Cut Gates", url: "/cnc-cut-gates-ayodhya/", desc: "Bespoke architectural sheet metal gates" },
@@ -81,8 +81,8 @@ export const siteConfig = {
           ]
         },
         {
-          name: "Railings & Glass",
-          url: "/staircase-railings-ayodhya/",
+          name: "Railing & Glasses",
+          url: "/services/railing-glass/",
           items: [
             { title: "Staircase Railings", url: "/staircase-railings-ayodhya/", desc: "Glass, SS, MS, and CNC staircase guards" },
             { title: "Glass Railings", url: "/glass-railings-ayodhya/", desc: "Framed and spigot safety glass systems" },
@@ -92,14 +92,23 @@ export const siteConfig = {
           ]
         },
         {
-          name: "Exterior & Commercial",
-          url: "/exterior-wall-cladding-ayodhya/",
+          name: "Exterior Work",
+          url: "/services/exterior-work/",
           items: [
             { title: "Exterior Wall Cladding", url: "/exterior-wall-cladding-ayodhya/", desc: "Weatherproof facade panels and cladding" },
             { title: "ACP Cladding", url: "/acp-cladding-ayodhya/", desc: "Aluminium composite panel architectural elevation" },
             { title: "Glass Partitions", url: "/glass-partitions-ayodhya/", desc: "Acoustic cabin & meeting space partitions" },
+            { title: "Aluminium Doors & Windows", url: "/aluminium-doors-windows-ayodhya/", desc: "Precision architectural aluminium frames" }
+          ]
+        },
+        {
+          name: "Commercial Work",
+          url: "/services/commercial-work/",
+          items: [
             { title: "Office Interiors", url: "/office-interior-ayodhya/", desc: "Reception, workstations, cabins & storage" },
-            { title: "Shop & Showroom Interiors", url: "/shop-showroom-interior-ayodhya/", desc: "Retail display racks, counters & storefronts" }
+            { title: "Shop & Showroom Interiors", url: "/shop-showroom-interior-ayodhya/", desc: "Retail display racks, counters & storefronts" },
+            { title: "Clinic & Hospital Interiors", url: "/clinic-hospital-interior-ayodhya/", desc: "Hygienic healthcare interiors & clinic spaces" },
+            { title: "School Interiors", url: "/school-interior-ayodhya/", desc: "Educational furniture, reception & lab fittings" }
           ]
         }
       ]
@@ -124,11 +133,11 @@ export const siteConfig = {
   
   // Service Categories for Navigation & Filtering
   serviceCategories: [
-    { id: "residential", name: "Residential Interiors", count: 6 },
-    { id: "panels", name: "Wall Panels & Finishes", count: 4 },
-    { id: "railings", name: "Staircase & Balcony Railings", count: 5 },
-    { id: "gates", name: "Main Gates & Grills", count: 5 },
-    { id: "exterior", name: "Exterior & Architectural Glazing", count: 4 },
-    { id: "commercial", name: "Commercial Fit-Outs", count: 4 }
+    { id: "residential", name: "Home Interior", slug: "home-interior", url: "/services/home-interior/", count: 6 },
+    { id: "panels", name: "Wall Panels & Finishes", slug: "wall-panels-finishes", url: "/services/wall-panels-finishes/", count: 4 },
+    { id: "gates", name: "Gates & Fabrication", slug: "gates-fabrication", url: "/services/gates-fabrication/", count: 5 },
+    { id: "railings", name: "Railing & Glasses", slug: "railing-glass", url: "/services/railing-glass/", count: 5 },
+    { id: "exterior", name: "Exterior Work", slug: "exterior-work", url: "/services/exterior-work/", count: 4 },
+    { id: "commercial", name: "Commercial Work", slug: "commercial-work", url: "/services/commercial-work/", count: 4 }
   ]
 };

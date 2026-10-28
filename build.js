@@ -10,12 +10,14 @@ import { fileURLToPath } from "url";
 
 import { siteConfig } from "./src/config/site.js";
 import { allServices } from "./src/data/services.js";
+import { categoriesData, getServicesForCategory } from "./src/data/categories.js";
 import { renderBaseLayout } from "./src/layout/BaseLayout.js";
-import { buildGlobalSchema, buildServiceSchema } from "./src/components/SchemaOrg.js";
+import { buildGlobalSchema, buildServiceSchema, buildCategorySchema } from "./src/components/SchemaOrg.js";
 
 // Pages
 import { renderHomePage } from "./src/pages/HomePage.js";
 import { renderServicesPage } from "./src/pages/ServicesPage.js";
+import { renderCategoryPage } from "./src/pages/CategoryPage.js";
 import { renderAboutPage } from "./src/pages/AboutPage.js";
 import { renderContactPage } from "./src/pages/ContactPage.js";
 import { renderProjectsPage } from "./src/pages/ProjectsPage.js";
@@ -99,6 +101,29 @@ async function build() {
   writeOutputFile("services/index.html", servicesHtml);
   canonicalRoutes.push({ url: "/services/", priority: "0.9", changefreq: "weekly" });
   console.log("✓ Services Directory built: /services/");
+
+  // B2. Build 6 Dedicated Category Hub Pages (/services/[category.slug]/)
+  console.log("Building all 6 dedicated service category hubs...");
+  for (const cat of categoriesData) {
+    const catContent = renderCategoryPage(cat);
+    const catServices = getServicesForCategory(cat.id);
+    const catBreadcrumbs = [
+      { name: "Home", url: "/" },
+      { name: "Services", url: "/services/" },
+      { name: cat.name, url: cat.url }
+    ];
+    const catHtml = renderBaseLayout({
+      title: cat.metaTitle,
+      description: cat.metaDescription,
+      currentPath: cat.url,
+      canonicalUrl: cat.url,
+      schemaHtml: buildCategorySchema(cat, catServices, catBreadcrumbs),
+      content: catContent
+    });
+    writeOutputFile(`services/${cat.slug}/index.html`, catHtml);
+    canonicalRoutes.push({ url: cat.url, priority: "0.85", changefreq: "weekly" });
+    console.log(`  ✓ Category Hub built: ${cat.url}`);
+  }
 
   // C. About Studio (/about/)
   const aboutContent = renderAboutPage();

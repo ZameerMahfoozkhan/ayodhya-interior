@@ -4,7 +4,8 @@
  */
 
 import { siteConfig } from "../config/site.js";
-import { allServices, getServicesByCategory } from "../data/services.js";
+import { allServices } from "../data/services.js";
+import { categoriesData, getServicesForCategory } from "../data/categories.js";
 import { renderBreadcrumb } from "../components/Breadcrumb.js";
 
 export function renderServicesPage() {
@@ -13,17 +14,8 @@ export function renderServicesPage() {
     { name: "Services Directory", url: "/services/" }
   ]);
 
-  const categories = [
-    { id: "residential", name: "Residential Interiors", desc: "Turnkey home interiors, modular kitchens, wardrobes, TV consoles, ceilings, and flooring." },
-    { id: "panels", name: "Decorative Panels & Finishes", desc: "Moisture-resistant PVC, high-density WPC louvers, fluted slats, and UV marble sheets." },
-    { id: "railings", name: "Staircase & Balcony Railings", desc: "Engineered safety glass, grade 304 stainless steel, mild steel, and laser-cut CNC balustrades." },
-    { id: "gates", name: "Main Entrance Gates & Grills", desc: "Heavy structural swing, sliding, and laser-cut CNC entrance gates with anti-rust powder coatings." },
-    { id: "exterior", name: "Exterior Facades & Architectural Glazing", desc: "Exterior WPC cladding, ACP commercial elevations, glass partitions, and aluminium doors/windows." },
-    { id: "commercial", name: "Commercial Fit-Outs", desc: "Office workstations, retail showroom displays, clinic interiors, and school institutional furniture." }
-  ];
-
-  const categorySectionsHtml = categories.map(cat => {
-    const services = getServicesByCategory(cat.id);
+  const categorySectionsHtml = categoriesData.map(cat => {
+    const services = getServicesForCategory(cat.id);
     const serviceCards = services.map(s => `
       <div class="bezel-card service-card">
         <div class="bezel-card-inner">
@@ -43,10 +35,16 @@ export function renderServicesPage() {
 
     return `
       <div id="${cat.id}" style="margin-bottom: 64px; scroll-margin-top: 100px;">
-        <div style="margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border-light);">
-          <span class="section-eyebrow">${cat.name}</span>
-          <h2 style="font-size: 1.8rem; margin-bottom: 8px;">${cat.name}</h2>
-          <p style="color: var(--text-secondary); max-width: 680px; margin: 0;">${cat.desc}</p>
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid var(--border-light);">
+          <div>
+            <span class="section-eyebrow">${cat.name} (${services.length} Services)</span>
+            <h2 style="font-size: 1.8rem; margin-bottom: 8px;">${cat.name}</h2>
+            <p style="color: var(--text-secondary); max-width: 680px; margin: 0;">${cat.tagline}</p>
+          </div>
+          <a href="${cat.url}" class="btn btn-secondary" style="font-size: 0.85rem; padding: 10px 18px; border-radius: var(--radius-md);">
+            <span>Explore Dedicated ${cat.name} Hub</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
         </div>
         <div class="services-grid">
           ${serviceCards}
@@ -64,7 +62,7 @@ export function renderServicesPage() {
           <h1 class="section-title">Complete Architectural & Interior <span class="highlight-gold">Services in Ayodhya</span></h1>
           <div class="service-hero-intro-card" style="margin-top: 14px;">
             <p class="service-hero-intro-text">
-              Explore all 28 specialized disciplines delivered across Ayodhya and Faizabad. Every service is custom engineered to your architectural drawings and site measurements.
+              Explore all 28 specialized disciplines delivered across Ayodhya and Faizabad across our 6 core categories. Every service is custom engineered to your architectural drawings and site measurements.
             </p>
           </div>
         </div>
@@ -76,12 +74,9 @@ export function renderServicesPage() {
 
         <!-- Category Jump Anchors -->
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 48px;">
-          <a href="#residential" class="filter-btn">Residential Interiors</a>
-          <a href="#panels" class="filter-btn">Wall Panels</a>
-          <a href="#railings" class="filter-btn">Railings</a>
-          <a href="#gates" class="filter-btn">Main Gates</a>
-          <a href="#exterior" class="filter-btn">Exterior Facades</a>
-          <a href="#commercial" class="filter-btn">Commercial Fit-Outs</a>
+          ${categoriesData.map(c => `
+            <a href="#${c.id}" class="filter-btn">${c.name}</a>
+          `).join("")}
         </div>
 
         ${categorySectionsHtml}

@@ -18,11 +18,51 @@
 
 import { siteConfig } from "../config/site.js";
 import { allServices } from "../data/services.js";
+import { categoriesData, getServicesForCategory } from "../data/categories.js";
 import { projectsData } from "../data/projects.js";
 import { renderFAQAccordion } from "../components/FAQAccordion.js";
 import { renderEnquiryForm } from "../components/EnquiryForm.js";
 
 export function renderHomePage() {
+  // Generate 6 Category Cards for Section 3 with related services chips and dedicated page links
+  const categoryCardsHtml = categoriesData.map(cat => {
+    const services = getServicesForCategory(cat.id);
+    const serviceChips = services.map(s => `
+      <a href="/${s.slug}/" class="category-card-service-chip" title="Explore ${s.title}">
+        <span class="category-chip-dot">•</span>
+        <span>${s.title}</span>
+      </a>
+    `).join("");
+
+    return `
+      <div class="bezel-card category-card">
+        <div class="bezel-card-inner">
+          <div class="category-card-top">
+            <div class="category-card-icon-box">
+              ${cat.iconSvg}
+            </div>
+            <span class="category-card-count-badge">${services.length} Disciplines</span>
+          </div>
+          <h3 class="category-card-title">${cat.name}</h3>
+          <p class="category-card-desc">${cat.shortDesc}</p>
+          
+          <div class="category-card-services-box">
+            <span class="category-card-services-label">Related Services:</span>
+            <div class="category-card-services-list">
+              ${serviceChips}
+            </div>
+          </div>
+
+          <div class="category-card-footer">
+            <a href="${cat.url}" class="service-card-link">
+              <span>Explore All ${cat.name}</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join("");
   // Select top popular services for Section 4
   const popularServiceSlugs = [
     "modular-kitchen-ayodhya",
@@ -208,113 +248,19 @@ export function renderHomePage() {
       </div>
     </section>
 
-    <!-- SECTION 3: SERVICE CATEGORY OVERVIEW (8 Attractive Cards) -->
+    <!-- SECTION 3: SERVICE CATEGORY OVERVIEW (6 Master Architectural Disciplines) -->
     <section class="section section-muted">
       <div class="container">
         <div class="section-header">
           <span class="section-eyebrow">Comprehensive Expertise</span>
           <h2 class="section-title">Explore Our Service Categories</h2>
           <p class="section-subtitle">
-            Whether upgrading a single kitchen, installing decorative damp-proof wall panels, or completing a turnkey commercial building, explore our specialized disciplines.
+            Whether upgrading a single kitchen, installing decorative damp-proof wall panels, or completing a turnkey commercial building, explore our 6 specialized disciplines.
           </p>
         </div>
 
         <div class="category-cards-grid">
-          <!-- 1. Home Interiors -->
-          <div class="bezel-card">
-            <div class="bezel-card-inner">
-              <div style="width: 44px; height: 44px; border-radius: 10px; background-color: var(--accent-sage-light); display: flex; align-items: center; justify-content: center; margin-bottom: 14px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-sage-dark)" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-              </div>
-              <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Home Interiors</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">Turnkey living room, bedroom, TV consoles, ceilings, and modular joinery.</p>
-              <a href="/home-interiors-ayodhya/" class="service-card-link">Explore Interiors →</a>
-            </div>
-          </div>
-
-          <!-- 2. Modular Kitchens -->
-          <div class="bezel-card">
-            <div class="bezel-card-inner">
-              <div style="width: 44px; height: 44px; border-radius: 10px; background-color: var(--accent-walnut-light); display: flex; align-items: center; justify-content: center; margin-bottom: 14px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-walnut)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-              </div>
-              <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Modular Kitchens</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">IS 710 BWP marine ply, tandem drawers, corner storage & modern chimneys.</p>
-              <a href="/modular-kitchen-ayodhya/" class="service-card-link">Explore Kitchens →</a>
-            </div>
-          </div>
-
-          <!-- 3. Decorative Panels -->
-          <div class="bezel-card">
-            <div class="bezel-card-inner">
-              <div style="width: 44px; height: 44px; border-radius: 10px; background-color: var(--accent-sage-light); display: flex; align-items: center; justify-content: center; margin-bottom: 14px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-sage-dark)" stroke-width="2"><rect x="3" y="3" width="7" height="18"/><rect x="14" y="3" width="7" height="18"/></svg>
-              </div>
-              <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Decorative Panels</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">PVC, WPC fluted louvers, UV marble sheets, and 3D textured feature walls.</p>
-              <a href="/pvc-wall-panels-ayodhya/" class="service-card-link">Explore Panels →</a>
-            </div>
-          </div>
-
-          <!-- 4. Staircase & Balcony Railings -->
-          <div class="bezel-card">
-            <div class="bezel-card-inner">
-              <div style="width: 44px; height: 44px; border-radius: 10px; background-color: var(--accent-walnut-light); display: flex; align-items: center; justify-content: center; margin-bottom: 14px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-walnut)" stroke-width="2"><path d="M6 20h12M6 20l12-14M6 4h12"/></svg>
-              </div>
-              <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Staircase Railings</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">12mm safety glass, SS 304 stainless steel, and precision CNC laser balustrades.</p>
-              <a href="/staircase-railings-ayodhya/" class="service-card-link">Explore Railings →</a>
-            </div>
-          </div>
-
-          <!-- 5. Main Gates & Metalwork -->
-          <div class="bezel-card">
-            <div class="bezel-card-inner">
-              <div style="width: 44px; height: 44px; border-radius: 10px; background-color: var(--accent-sage-light); display: flex; align-items: center; justify-content: center; margin-bottom: 14px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-sage-dark)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
-              </div>
-              <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Main Gates</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">Heavy-gauge swing & sliding gates, CNC laser jalis & security grills.</p>
-              <a href="/main-gate-installation-ayodhya/" class="service-card-link">Explore Gates →</a>
-            </div>
-          </div>
-
-          <!-- 6. Exterior Facades -->
-          <div class="bezel-card">
-            <div class="bezel-card-inner">
-              <div style="width: 44px; height: 44px; border-radius: 10px; background-color: var(--accent-walnut-light); display: flex; align-items: center; justify-content: center; margin-bottom: 14px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-walnut)" stroke-width="2"><path d="M4 4h16v16H4zM4 12h16M12 4v16"/></svg>
-              </div>
-              <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Exterior Facades</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">Exterior WPC cladding, ACP commercial panels, and rainscreen systems.</p>
-              <a href="/exterior-wall-cladding-ayodhya/" class="service-card-link">Explore Facades →</a>
-            </div>
-          </div>
-
-          <!-- 7. Glass & Aluminium -->
-          <div class="bezel-card">
-            <div class="bezel-card-inner">
-              <div style="width: 44px; height: 44px; border-radius: 10px; background-color: var(--accent-sage-light); display: flex; align-items: center; justify-content: center; margin-bottom: 14px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-sage-dark)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 15h18M15 3v18"/></svg>
-              </div>
-              <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Glass & Aluminium</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">Acoustic glass partitions, sliding windows, and storefront glazing.</p>
-              <a href="/glass-partitions-ayodhya/" class="service-card-link">Explore Glazing →</a>
-            </div>
-          </div>
-
-          <!-- 8. Commercial Fit-Outs -->
-          <div class="bezel-card">
-            <div class="bezel-card-inner">
-              <div style="width: 44px; height: 44px; border-radius: 10px; background-color: var(--accent-walnut-light); display: flex; align-items: center; justify-content: center; margin-bottom: 14px;">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent-walnut)" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-              </div>
-              <h3 style="font-size: 1.2rem; margin-bottom: 6px;">Commercial Fit-Outs</h3>
-              <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 16px;">Offices, retail showrooms, clinics, and educational institution interiors.</p>
-              <a href="/office-interior-ayodhya/" class="service-card-link">Explore Commercial →</a>
-            </div>
-          </div>
+          ${categoryCardsHtml}
         </div>
       </div>
     </section>
