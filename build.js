@@ -11,8 +11,9 @@ import { fileURLToPath } from "url";
 import { siteConfig } from "./src/config/site.js";
 import { allServices } from "./src/data/services.js";
 import { categoriesData, getServicesForCategory } from "./src/data/categories.js";
+import { guidesData } from "./src/data/guides.js";
 import { renderBaseLayout } from "./src/layout/BaseLayout.js";
-import { buildGlobalSchema, buildServiceSchema, buildCategorySchema } from "./src/components/SchemaOrg.js";
+import { buildGlobalSchema, buildServiceSchema, buildCategorySchema, buildGuidesSchema } from "./src/components/SchemaOrg.js";
 
 // Pages
 import { renderHomePage } from "./src/pages/HomePage.js";
@@ -86,7 +87,12 @@ async function build() {
     content: homeContent
   });
   writeOutputFile("index.html", homeHtml);
-  canonicalRoutes.push({ url: "/", priority: "1.0", changefreq: "weekly" });
+  canonicalRoutes.push({
+    url: "/",
+    priority: "1.0",
+    changefreq: "weekly",
+    image: { url: "/images/hero/hero-architectural.jpg", title: "Ayodhya Interiors & Exterior Studio Architectural Concept" }
+  });
   console.log("✓ Homepage built: /");
 
   // B. Services Directory (/services/)
@@ -121,7 +127,12 @@ async function build() {
       content: catContent
     });
     writeOutputFile(`services/${cat.slug}/index.html`, catHtml);
-    canonicalRoutes.push({ url: cat.url, priority: "0.85", changefreq: "weekly" });
+    canonicalRoutes.push({
+      url: cat.url,
+      priority: "0.85",
+      changefreq: "weekly",
+      image: { url: cat.heroImage, title: `${cat.name} in Ayodhya` }
+    });
     console.log(`  ✓ Category Hub built: ${cat.url}`);
   }
 
@@ -171,10 +182,16 @@ async function build() {
     description: `Practical buying guides on modular kitchens, PVC vs WPC panels, glass vs steel staircase railings, and main entrance gate selection in Ayodhya.`,
     currentPath: "/guides/",
     canonicalUrl: "/guides/",
+    schemaHtml: buildGuidesSchema(guidesData),
     content: guidesContent
   });
   writeOutputFile("guides/index.html", guidesHtml);
-  canonicalRoutes.push({ url: "/guides/", priority: "0.8", changefreq: "weekly" });
+  canonicalRoutes.push({
+    url: "/guides/",
+    priority: "0.8",
+    changefreq: "weekly",
+    image: { url: "/images/guides/guide-kitchen.jpg", title: "Modular Kitchen Advice Guide in Ayodhya" }
+  });
   console.log("✓ Guides Page built: /guides/");
 
   // G. Privacy Policy (/privacy-policy/)
@@ -226,35 +243,68 @@ async function build() {
     });
 
     writeOutputFile(`${service.slug}/index.html`, serviceHtml);
-    canonicalRoutes.push({ url: servicePath, priority: "0.85", changefreq: "monthly" });
+    canonicalRoutes.push({
+      url: servicePath,
+      priority: "0.85",
+      changefreq: "monthly",
+      image: { url: service.heroImage, title: `${service.title} in Ayodhya` }
+    });
     console.log(`  ✓ Built: ${servicePath}`);
   });
 
-  // 5. Generate XML Sitemap
+  // 5. Generate XML Sitemap (with Google Image Sitemap support)
   const today = new Date().toISOString().split("T")[0];
   const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${canonicalRoutes.map(route => `  <url>
     <loc>${siteConfig.siteUrl}${route.url}</loc>
     <lastmod>${today}</lastmod>
     <changefreq>${route.changefreq}</changefreq>
-    <priority>${route.priority}</priority>
+    <priority>${route.priority}</priority>${route.image ? `
+    <image:image>
+      <image:loc>${siteConfig.siteUrl}${route.image.url}</image:loc>
+      <image:title><![CDATA[${route.image.title}]]></image:title>
+    </image:image>` : ""}
   </url>`).join("\n")}
 </urlset>`;
 
   writeOutputFile("sitemap.xml", sitemapXml);
-  console.log(`✓ Valid sitemap.xml generated with ${canonicalRoutes.length} indexable URLs`);
+  console.log(`✓ Valid sitemap.xml generated with ${canonicalRoutes.length} indexable URLs & Image metadata`);
 
-  // 6. Generate robots.txt
+  // 6. Generate robots.txt (with AI Agentic and llms.txt directives)
   const robotsTxt = `# robots.txt for ${siteConfig.brandName}
+# Canonical Website: ${siteConfig.siteUrl}
+
 User-agent: *
 Allow: /
+Disallow: /404.html
 
-# Sitemap Location
+# AI Search & Autonomous Agent Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Sitemap & LLM Discovery
 Sitemap: ${siteConfig.siteUrl}/sitemap.xml
+# LLMs specification: https://llmstxt.org
+# LLMs discovery: ${siteConfig.siteUrl}/llms.txt
 `;
   writeOutputFile("robots.txt", robotsTxt);
-  console.log("✓ robots.txt generated");
+  console.log("✓ robots.txt generated with AI agent directives");
 
   // 7. Generate site.webmanifest
   const manifest = {

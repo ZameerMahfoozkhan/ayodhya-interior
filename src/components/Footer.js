@@ -78,10 +78,17 @@ export function renderFooter() {
               <li><a href="/privacy-policy/" class="footer-link">Privacy Policy</a></li>
             </ul>
             <div style="background-color: rgba(255, 255, 255, 0.05); padding: 14px; border-radius: var(--radius-md); border: 1px solid rgba(223, 220, 212, 0.1);">
-              <span style="display: block; font-size: 0.8rem; font-weight: 700; color: #FFFFFF; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.05em;">Service Area</span>
-              <p style="font-size: 0.8rem; color: #A3A7A1; margin: 0; line-height: 1.4;">
+              <span style="display: block; font-size: 0.8rem; font-weight: 700; color: #FFFFFF; margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.05em;">Service Area & Localities</span>
+              <p style="font-size: 0.8rem; color: #A3A7A1; margin: 0 0 8px 0; line-height: 1.4;">
                 ${siteConfig.serviceRegionDescription}
               </p>
+              ${siteConfig.targetLocalities ? `
+                <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px;">
+                  ${siteConfig.targetLocalities.slice(0, 8).map(loc => `
+                    <span style="font-size: 0.72rem; background: rgba(255,255,255,0.08); color: #E5DFC5; padding: 2px 7px; border-radius: 4px;">${loc}</span>
+                  `).join("")}
+                </div>
+              ` : ""}
             </div>
           </div>
         </div>

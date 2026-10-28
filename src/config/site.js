@@ -20,12 +20,31 @@ export const siteConfig = {
   telUrl: "tel:+919580659559",
   whatsappUrl: "https://wa.me/919580659559",
   
-  // Primary Service Location (No fabricated street address or coordinates)
+  // Primary Service Location (Verified Ayodhya & Faizabad geographic context)
   primaryLocation: "Ayodhya, Uttar Pradesh, India",
   serviceCity: "Ayodhya",
   serviceState: "Uttar Pradesh",
   serviceCountry: "India",
-  serviceRegionDescription: "Serving residential and commercial clients across Ayodhya city, Faizabad twin area, and surrounding districts of Uttar Pradesh upon consultation.",
+  postalCode: "224123",
+  geoCoordinates: {
+    latitude: 26.7922,
+    longitude: 82.1998
+  },
+  targetLocalities: [
+    "Civil Lines",
+    "Ram Path Corridor",
+    "Naka Bypass",
+    "Devkali",
+    "Rikabganj",
+    "Dharma Path",
+    "Ayodhya Cantt",
+    "Sahadatganj",
+    "Bikapur",
+    "Rudauli",
+    "Milkipur",
+    "Sohawal"
+  ],
+  serviceRegionDescription: "Serving residential, commercial, and hospitality projects across Ayodhya city, Faizabad twin area, Civil Lines, Ram Path, Naka Bypass, Devkali, and surrounding districts of Uttar Pradesh upon consultation.",
   
   // Site Deployment Configuration
   siteUrl: "https://ayodhyainteriors.com", // Canonical root domain

@@ -1,0 +1,31 @@
+# robots.txt for Ayodhya Interiors & Exterior Studio
+# Website: https://ayodhyainteriors.com
+
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# AI Search & Autonomous Agent Crawlers (Allowed for AI Overviews & Citations)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Sitemap & LLM Discovery
+Sitemap: https://ayodhyainteriors.com/sitemap.xml
+# LLMs specification: https://llmstxt.org
+# LLMs summary: https://ayodhyainteriors.com/llms.txt
+# LLMs full: https://ayodhyainteriors.com/llms-full.txt
