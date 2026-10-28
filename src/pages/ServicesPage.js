@@ -61,7 +61,7 @@ export function renderServicesPage() {
         ${breadcrumbHtml}
         <div class="page-hero-header">
           <span class="section-eyebrow">Comprehensive Catalogue</span>
-          <h1 class="section-title">Complete Architectural & Interior Services in Ayodhya</h1>
+          <h1 class="section-title">Complete Architectural & Interior <span class="highlight-gold">Services in Ayodhya</span></h1>
           <div class="service-hero-intro-card" style="margin-top: 14px;">
             <p class="service-hero-intro-text">
               Explore all 28 specialized disciplines delivered across Ayodhya and Faizabad. Every service is custom engineered to your architectural drawings and site measurements.

@@ -19,7 +19,7 @@ export function renderContactPage() {
         ${breadcrumbHtml}
         <div class="page-hero-header">
           <span class="section-eyebrow">Direct Contact & Consultation</span>
-          <h1 class="section-title">Contact Our Ayodhya Studio</h1>
+          <h1 class="section-title">Contact Our <span class="highlight-gold">Ayodhya Studio</span></h1>
           <p class="section-subtitle">
             Speak directly with our project coordinators regarding residential interiors, decorative wall panels, custom gates, railings, and commercial fit-outs.
           </p>

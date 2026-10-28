@@ -18,8 +18,8 @@ export function renderAboutPage() {
         ${breadcrumbHtml}
         <div class="page-hero-header">
           <span class="section-eyebrow">Studio Approach & Standards</span>
-          <h1 style="font-size: clamp(2.2rem, 3.5vw + 1rem, 3rem); margin-bottom: 14px;">
-            About ${siteConfig.brandName}
+          <h1 class="section-title">
+            About <span class="highlight-gold">${siteConfig.brandName}</span>
           </h1>
           <p class="section-subtitle">
             ${siteConfig.supportingLine}

@@ -123,7 +123,7 @@ export function renderHomePage() {
               Ayodhya & Faizabad • Comprehensive Solutions
             </span>
             <h1 class="hero-headline">
-              Complete Interior, Exterior & Architectural Solutions in <span>Ayodhya</span>
+              Complete Interior, Exterior & Architectural Solutions in <span class="highlight-gold">Ayodhya</span>
             </h1>
             <p class="hero-description">
               From modular kitchens and decorative wall panels to custom gates, glass railings, and commercial interiors, explore tailored solutions for your home or business in Ayodhya.

@@ -44,7 +44,7 @@ export function renderProjectsPage() {
         ${breadcrumbHtml}
         <div class="page-hero-header">
           <span class="section-eyebrow">Design Portfolio</span>
-          <h1 class="section-title">Project Gallery & Architectural Concepts</h1>
+          <h1 class="section-title">Project Gallery & <span class="highlight-gold">Architectural Concepts</span></h1>
           <p class="section-subtitle">
             Explore execution concepts and material assemblies across residential interiors, decorative wall paneling, custom gates, railings, and commercial spaces.
           </p>

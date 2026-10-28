@@ -48,7 +48,7 @@ export function renderGuidesPage() {
         ${breadcrumbHtml}
         <div class="page-hero-header">
           <span class="section-eyebrow">Expert Advice</span>
-          <h1 class="section-title">Educational & Material Selection Guides</h1>
+          <h1 class="section-title">Educational & <span class="highlight-gold">Material Selection Guides</span></h1>
           <p class="section-subtitle">
             Practical, unbiased engineering advice to help homeowners and property managers in Ayodhya make informed decisions before starting work.
           </p>

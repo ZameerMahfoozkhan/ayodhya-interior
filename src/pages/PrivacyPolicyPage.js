@@ -18,7 +18,7 @@ export function renderPrivacyPolicyPage() {
         ${breadcrumbHtml}
         <div class="page-hero-header">
           <span class="section-eyebrow">Data Transparency</span>
-          <h1 class="section-title">Privacy Policy</h1>
+          <h1 class="section-title">Studio <span class="highlight-gold">Privacy Policy</span></h1>
           <p class="section-subtitle">
             Transparent disclosure on communication handling and data privacy for Ayodhya Interiors & Exterior Studio.
           </p>

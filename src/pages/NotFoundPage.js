@@ -17,7 +17,7 @@ export function renderNotFoundPage() {
       <div class="container" style="text-align: center; max-width: 680px; margin: 0 auto;">
         ${breadcrumbHtml}
         <span class="section-eyebrow">Error 404</span>
-        <h1 class="section-title">Page Not Found</h1>
+        <h1 class="section-title">404: <span class="highlight-gold">Page Not Found</span></h1>
         <p class="section-subtitle" style="margin: 0 auto 20px;">
           The page or service route you are looking for may have moved, been renamed, or is temporarily unavailable.
         </p>
